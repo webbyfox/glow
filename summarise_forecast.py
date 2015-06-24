@@ -80,21 +80,22 @@ class DefaultUnitTesting(unittest.TestCase):
 
 if __name__ == "__main__":
     """
-	>>>python2.7 summarise_forecast.py Paris
-	{'city': u'Paris', 'min': 69.1, 'forecasts': {u'Clear': ['2015-06-23', '2015-06-24', '2015-06-25', '2015-07-03'], u'Rain': ['2015-06-26', '2015-06-27', '2015-06-28', '2015-06-29', '2015-06-30', '2015-07-01', '2015-07-02', '2015-07-04', '2015-07-05', '2015-07-06']}, 'max': 93.51}
-
-	>>>python2.7 summarise_forecast.py unknowncity
-	No data found for this city...
-
-	This is interesting. API Call has minor bug ?. When I passed unknow as city argument.It returns Emungalan weather data
-	>>>python2.7 summarise_forecast.py unknown
-	{'city': u'Emungalan', 'min': 52.23, 'forecasts': {u'Clear': ['2015-06-24', '2015-06-25', '2015-06-26', '2015-06-27', '2015-06-28', '2015-06-29', '2015-06-30', '2015-07-01', '2015-07-02', '2015-07-03', '2015-07-04', '2015-07-05', '2015-07-06', '2015-07-07']}, 'max': 87.55}
-
-	>>>python2.7 -m unittest summarise_forecast
-	..
-	----------------------------------------------------------------------
-	Ran 2 tests in 0.072s
-
-	OK
+    >>>python2.7 summarise_forecast.py Paris
+    {'city': u'Paris', 'min': 69.1, 'forecasts': {u'Clear': ['2015-06-23', '2015-06-24', '2015-06-25', '2015-07-03'], u'Rain': ['2015-06-26', '2015-06-27', '2015-06-28', '2015-06-29', '2015-06-30', '2015-07-01', '2015-07-02', '2015-07-04', '2015-07-05', '2015-07-06']}, 'max': 93.51}
+    
+    >>>python2.7 summarise_forecast.py unknowncity
+    No data found for this city...
+    
+    # This is interesting. API Call has minor bug ?. When I passed unknow as city argument.It returns Emungalan weather data
+    >>>python2.7 summarise_forecast.py unknown
+    {'city': u'Emungalan', 'min': 52.23, 'forecasts': {u'Clear': ['2015-06-24', '2015-06-25', '2015-06-26', '2015-06-27', '2015-06-28', '2015-06-29', '2015-06-30', '2015-07-01', '2015-07-02', '2015-07-03', '2015-07-04', '2015-07-05', '2015-07-06', '2015-07-07']}, 'max': 87.55}
+    
+    
+    >>>python2.7 -m unittest summarise_forecast
+    ..
+    ----------------------------------------------------------------------
+    Ran 2 tests in 0.072s
+    
+    OK
     """
     sys.exit(main())
